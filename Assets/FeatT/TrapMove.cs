@@ -9,7 +9,7 @@ public class TrapMove : MonoBehaviour
 
     void Update()
     {
-        // 왼쪽(-x)으로 일정 속도 이동
+        // 왼쪽(left)으로 일정 속도 이동
         transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
     }
 }
