@@ -7,68 +7,90 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    [SerializeField] private GameObject gameOverText;     // 게임 오버
-    [SerializeField] private TextMeshProUGUI timeText;    // 생존시간 텍스트
-    [SerializeField] private TextMeshProUGUI scoreText;   // 점수 표시 텍스트
-    [SerializeField] private TextMeshProUGUI bestText;    // 최고 기록 표시 텍스트
+    [Header("게임 패널")]
+    [SerializeField] private GameObject gameOverPanel;    // 어두운 배경 패널
+    [Header("게임 텍스트")]
+    [SerializeField] private GameObject gameOverText;     // 게임 오버 텍스트
+    [SerializeField] private TextMeshProUGUI timeText;    // 생존 시간 텍스트
+    [SerializeField] private TextMeshProUGUI scoreText;   // 현재 점수 표시 텍스트
+    [SerializeField] private TextMeshProUGUI bestText;    // 최고 점수 표시 텍스트
+    [Header("게임 버튼")]
     [SerializeField] private Button restartBtn;           // 재시작 버튼
-    
+    [SerializeField] private Button exitBtn;              // 종료 버튼
+
 
     private float surviveTime;  // 생존한 시간
-    int score = 0; // 점수 누적
+    private int score = 0; // 점수 누적
+    [Header("게임 종료 여부")]
     public bool isGameOver = false; // 게임 오버 여부
 
 
     void Start()
     {
         Time.timeScale = 1;
-        gameOverText.gameObject.SetActive(false);
-        restartBtn.gameObject.SetActive(false);
+        gameOverPanel.SetActive(false);         // 게임 오버 패널 숨김
+        gameOverText.SetActive(false);          // 게임 오버 텍스트 숨김
+        restartBtn.gameObject.SetActive(false); // 재시작 버튼 숨김
+        exitBtn.gameObject.SetActive(false);    // 종료 버튼 숨김
+        bestText.gameObject.SetActive(false);   // 최고 점수 텍스트 숨김
     }
 
     void Update()
     {
         scoreText.text = "Score : " + score;
 
-        // 게임 오버라면
-        if (isGameOver)
+        if (!isGameOver)
         {
-            Time.timeScale = 0;
-            gameOverText.gameObject.SetActive(true);
-            restartBtn.gameObject.SetActive(true);
-
-            // 재시작
-            Restart();
-        }
+            surviveTime += Time.deltaTime; // 생존 시간 누적
 
 
-        // 생존 시간 누적
-        surviveTime += Time.deltaTime;
-        timeText.text = "Time : " + (int)surviveTime; // 생존 시간 표시
+            timeText.text = "Time : " + (int)surviveTime; // 생존 시간 표시
+            scoreText.text = "Score : " + score;
 
-        void Restart()
-        {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R)) // R버튼을 누르면
             {
-                SceneManager.LoadScene("SampleScene");
+                Restart();                   // 재시작
             }
         }
+
+        
     }
 
-    public void AddScore()
+    public void AddScore() // 점수 누적
     {
         score++;
     }
 
-    public void Reload() // 재시작
+    public void Restart()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+
+    public void Reload() // 처음 화면
     {
         SceneManager.LoadScene(0);
     }
 
-    public void EndGame()
+    public void ClickExitBtn()
+    {
+        Application.Quit();
+        Debug.Log("게임 종료"); 
+    }
+
+    // 게임이 끝났다면
+    public void EndGame() 
     {
         isGameOver = true;
-        // StartCoroutine(GameOverTextCo());
+        Time.timeScale = 0;
+
+        gameOverPanel.SetActive(true);          // 게임 오버 패널 표시
+        gameOverText.SetActive(true);           // 게임 오버 텍스트 표시
+        restartBtn.gameObject.SetActive(true);  // 재시작 버튼 표시
+        exitBtn.gameObject.SetActive(true);     // 종료 버튼 표시
+        bestText.gameObject.SetActive(true);    // 최고 점수 텍스트 표시
+
+        StartCoroutine(GameOverTextCo());
 
         // 최고 기록 가져오기
         float bestScore = PlayerPrefs.GetFloat("BestScore", 0f); // 기본값 0 설정
@@ -80,25 +102,20 @@ public class UI : MonoBehaviour
             bestScore = score;
             PlayerPrefs.SetFloat("BestScore", bestScore);
             PlayerPrefs.Save(); // 저장하기
-
-
         }
 
-        // 최고 기록 텍스트 표시
-        scoreText.text = "Best Score : " + (int)bestScore;
+        
+        scoreText.text = "Score : " + score;              // 현재 점수 텍스트 표시
+        bestText.text = "Best Score : " + (int)bestScore; // 최고 점수 텍스트 표시
     }
 
-    /****************************************************************************************************
-     
+    // 페이드 인 효과
     IEnumerator GameOverTextCo()
     {
-        // 텍스트 컴포넌트를 못 찾으면 그냥 끝내라
         if (!gameOverText.TryGetComponent(out TextMeshProUGUI text))
         {
             yield break;
         }
-
-        gameOverText.SetActive(true); // 게임 오버 텍스트 오브젝트 활성화
 
         Color color = text.color;
         color.a = 0.0f;
@@ -113,9 +130,7 @@ public class UI : MonoBehaviour
         }
 
         text.color = new Color(color.r, color.g, color.b, 1.0f);
-
     }
-    **********************************************************************************************/
 
 
- }
+}
