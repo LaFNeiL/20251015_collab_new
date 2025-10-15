@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 376109801}
   - component: {fileID: 376109803}
   - component: {fileID: 376109802}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG3
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,8 +209,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f742986c8cfb0f9408700b55894aba73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -326,9 +326,9 @@ GameObject:
   - component: {fileID: 745368569}
   - component: {fileID: 745368571}
   - component: {fileID: 745368570}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG1
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,8 +401,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ab01f61b3c6a46c4587ab9734c601f5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -426,9 +426,9 @@ GameObject:
   - component: {fileID: 782233059}
   - component: {fileID: 782233061}
   - component: {fileID: 782233060}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG4
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,8 +501,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 072fb9c03f98b8541804c8632eda3b74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -526,9 +526,9 @@ GameObject:
   - component: {fileID: 794977880}
   - component: {fileID: 794977882}
   - component: {fileID: 794977881}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG3
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -601,8 +601,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f742986c8cfb0f9408700b55894aba73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -626,9 +626,9 @@ GameObject:
   - component: {fileID: 1018194818}
   - component: {fileID: 1018194820}
   - component: {fileID: 1018194819}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG4
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -701,8 +701,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 072fb9c03f98b8541804c8632eda3b74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -761,9 +761,9 @@ GameObject:
   - component: {fileID: 1599701788}
   - component: {fileID: 1599701790}
   - component: {fileID: 1599701789}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG2
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -836,8 +836,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 151eef41825813d4f96dd0d4c8ecdc2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -894,9 +894,9 @@ GameObject:
   - component: {fileID: 1746402025}
   - component: {fileID: 1746402027}
   - component: {fileID: 1746402026}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG2
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -969,8 +969,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 151eef41825813d4f96dd0d4c8ecdc2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -994,9 +994,9 @@ GameObject:
   - component: {fileID: 1994265524}
   - component: {fileID: 1994265526}
   - component: {fileID: 1994265525}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: BG1
-  m_TagString: BackGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,8 +1069,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1767218453
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ab01f61b3c6a46c4587ab9734c601f5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
