@@ -846,12 +846,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5ac2b6790b13b4cb906c01b9d421ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapPrefab: {fileID: 5850242413186921213, guid: ea8326dc3597b7345907f71b6cf74ce1, type: 3}
+  trapPrefab: {fileID: 2988550591973322403, guid: ea8326dc3597b7345907f71b6cf74ce1, type: 3}
   timeInterval: 2.5
   trapLifetime: 10
   minY: -2
   maxY: 2
-  spawnX: 40
+  spawnX: 35
 --- !u!4 &559874870
 Transform:
   m_ObjectHideFlags: 0
