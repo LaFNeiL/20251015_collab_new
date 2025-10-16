@@ -46,7 +46,8 @@ public class ScoreManager : MonoBehaviour
             bestScoreText.text = bestScore.ToString();
     }
 
-    // 베스트 스코어 기록
-
-
+    public void BestScoreUI() //외부 호출용 베스트 스코어 함수
+    {
+        UpdateBestScoreUI();
+    }
 }

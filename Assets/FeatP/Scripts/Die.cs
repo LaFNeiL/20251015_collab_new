@@ -18,7 +18,7 @@ public class Die : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.y < -15.0f)
+        if (transform.position.y < -12.5f || transform.position.y > 10.0f)
         {
             Died();
         }
