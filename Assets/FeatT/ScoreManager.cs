@@ -27,4 +27,5 @@ public class ScoreManager : MonoBehaviour
         if (scoreCountText != null)
             scoreCountText.text = scoreCount.ToString();
     }
+
 }
