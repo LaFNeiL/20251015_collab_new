@@ -9,6 +9,9 @@ public class Jump : MonoBehaviour
     [Header("점프 파워")]
     [SerializeField] private float jumpPower = 8.0f; //점프 파워
 
+    [Header("점프사운드")]
+    [SerializeField] private AudioSource jumpSound;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +22,7 @@ public class Jump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) //입력값 받으면 점프메서드 호출
         {
             Jumping();
+            jumpSound.Play();
         }
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, -45.0f), Time.deltaTime * 2f);  //낙하시 아래로 기울임
     }
