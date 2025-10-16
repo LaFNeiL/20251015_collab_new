@@ -11,11 +11,11 @@ public class GameOver : MonoBehaviour
 
     [Header("게임오버 텍스트")]
     [SerializeField] private GameObject gameOverPanel;
-    
+
     void Awake()
     {
         gameOverPanel.SetActive(false); //게임오버 텍스트 비활성화
-        restartButton.gameObject.SetActive(false); //게임오버 텍스트 비활성화
+        restartButton.gameObject.SetActive(false); //게임오버 버튼 비활성화
         restartButton.onClick.AddListener(Restart); //버튼 클릭시 restart함수 호출
     }
 

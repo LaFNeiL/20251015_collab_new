@@ -13,10 +13,29 @@ public class Die : MonoBehaviour
 
     private bool isDead = false;
 
+    private AudioSource gameOverBgm;
+
+    private void Start()
+    {
+        GameObject gameOverBGM = GameObject.Find("GameOver");
+        if (gameOverBGM != null)
+        {
+            gameOverBgm = gameOverBGM.GetComponent<AudioSource>();
+        }
+    }
+
+    private void Update()
+    {
+        if (transform.position.y < -15.0f)
+        {
+            Died();
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (isDead) return; //이미 죽었으면 무시
-        if (collision.gameObject.CompareTag("Pipe") || transform.position.y < -15.0f) //파이프에 닿거나 플레이어가 -15.0f보다 낮은 위치에있으면 죽음 판정
+        if (collision.gameObject.CompareTag("Pipe")) //파이프에 닿거나 플레이어가 -15.0f보다 낮은 위치에있으면 죽음 판정
         {
             Died();
         }
@@ -27,5 +46,6 @@ public class Die : MonoBehaviour
         isDead = true;
         gameOver.ShowGameOver();
         player.SetActive(false); //플레이어 비활성화
+        gameOverBgm.Play();
     }
 }
