@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1daa4cadf6b52429311821d7048c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOver: {fileID: 0}
+  player: {fileID: 8852567110234492676}
 --- !u!58 &2844157842506145969
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110,8 +112,8 @@ Transform:
   m_GameObject: {fileID: 8852567110234492676}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -0.18292682, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8330454607986609861}
@@ -156,7 +158,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1657216919
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 2995288305113397050, guid: 826cca8098ba67444800308fae791ca3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
