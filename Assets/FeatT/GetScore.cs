@@ -9,9 +9,8 @@ public class GetScore : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //UI쪽 Score 함수호출 ++; 추가할것.
-            //예시)Score.score++;
+            ScoreManager.Instance.AddScore(); //스코어 매니저 에서 AddScore 호출
         }
-        //완성 후 GetScore 오브젝트에 컴포넌트 적용
+        //GetScore 오브젝트에 컴포넌트 적용
     }
 }
