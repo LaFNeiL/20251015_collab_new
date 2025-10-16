@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    [Header("생성할 트랩 프리팹")]
+    [Header("스폰할 트랩 프리팹 할당")]
     [SerializeField] private GameObject trapPrefab;
 
     [Header("트랩 생성 시간 간격 (초)")]
@@ -17,10 +17,10 @@ public class Trap : MonoBehaviour
     [SerializeField] private float minY = -0.5f;
     [SerializeField] private float maxY = 1.0f;
 
-    [Header("트랩 고정 X 위치")]
-    [SerializeField] private float spawnX = 5f;
+    [Header("트랩 고정 X 위치->스폰되는 위치")]
+    [SerializeField] private float spawnX = 5.0f;
 
-    private float timer = 0f;
+    private float timer = 0.0f;
 
     void Update()
     {
@@ -37,7 +37,7 @@ public class Trap : MonoBehaviour
 
             //일정 시간 후 파괴
             Destroy(newTrap, trapLifetime);
-            timer = 0f;
+            timer = 0.0f;
         }
     }
 }

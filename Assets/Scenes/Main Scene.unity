@@ -123,7 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &218821251
+=======
+--- !u!1 &495087778
+>>>>>>> origin/FeatT
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,6 +135,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 218821252}
   - component: {fileID: 218821254}
   - component: {fileID: 218821253}
@@ -1246,10 +1251,18 @@ GameObject:
   m_Layer: 30
   m_Name: SquareDown
   m_TagString: Pipe
+=======
+  - component: {fileID: 495087779}
+  - component: {fileID: 495087780}
+  m_Layer: 0
+  m_Name: TrapSpawner
+  m_TagString: Untagged
+>>>>>>> origin/FeatT
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!212 &1036834504
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1303,26 +1316,39 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1036834505
+=======
+--- !u!4 &495087779
+>>>>>>> origin/FeatT
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1036834503}
+=======
+  m_GameObject: {fileID: 495087778}
+>>>>>>> origin/FeatT
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.034974538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1189161179
 GameObject:
+=======
+--- !u!114 &495087780
+MonoBehaviour:
+>>>>>>> origin/FeatT
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1189161180}
@@ -2382,6 +2408,21 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918212193
+=======
+  m_GameObject: {fileID: 495087778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5ac2b6790b13b4cb906c01b9d421ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapPrefab: {fileID: 5850242413186921213, guid: ea8326dc3597b7345907f71b6cf74ce1, type: 3}
+  timeInterval: 2.5
+  trapLifetime: 10
+  minY: -2
+  maxY: 2
+  spawnX: 13
+--- !u!1 &519420028
+>>>>>>> origin/FeatT
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2955,6 +2996,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD
   - {fileID: 2035504567}
   - {fileID: 301711240}
   - {fileID: 2078539191}
@@ -2963,3 +3005,7 @@ SceneRoots:
   - {fileID: 1861982032}
   - {fileID: 1036834505}
   - {fileID: 1294550611}
+=======
+  - {fileID: 519420032}
+  - {fileID: 495087779}
+>>>>>>> origin/FeatT
