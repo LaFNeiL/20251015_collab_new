@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19976d77dbd53d44982a1a5c94bd7ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartSound: {fileID: 0}
+  restartSound: {fileID: 1605332363}
   restartButton: {fileID: 1102366428}
   gameOverPanel: {fileID: 10833788}
 --- !u!114 &851160356
