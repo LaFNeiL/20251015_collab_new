@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Die : MonoBehaviour
 {
+    [Header("게임오버사운드")]
+    [SerializeField] private AudioSource gameOverBgm;
+
     [Header("게임오버매니저")]
     [SerializeField] private GameOver gameOver;
 
@@ -12,17 +15,6 @@ public class Die : MonoBehaviour
     [SerializeField] private GameObject player;
 
     private bool isDead = false;
-
-    private AudioSource gameOverBgm;
-
-    private void Start()
-    {
-        GameObject gameOverBGM = GameObject.Find("GameOver");
-        if (gameOverBGM != null)
-        {
-            gameOverBgm = gameOverBGM.GetComponent<AudioSource>();
-        }
-    }
 
     private void Update()
     {

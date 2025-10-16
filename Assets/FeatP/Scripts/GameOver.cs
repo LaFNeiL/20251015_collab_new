@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
+    [Header("재시작사운드")]
+    [SerializeField] private AudioSource restartSound;
+
     [Header("재시작버튼")]
     [SerializeField] private Button restartButton;
 
@@ -26,6 +29,15 @@ public class GameOver : MonoBehaviour
     }
     public void Restart()
     {
+        StartCoroutine(RestartSound());
+    }
+
+    private IEnumerator RestartSound()
+    {
+        restartSound.Play();
+
+        yield return new WaitForSeconds(restartSound.clip.length); //사운드 길이만큼 대기
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //씬 재시작
     }
 }
