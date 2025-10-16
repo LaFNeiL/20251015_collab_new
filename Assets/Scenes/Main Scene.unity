@@ -327,9 +327,17 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 1978903603}
+    - target: {fileID: 8330454607986609861, guid: ea2d7ce6e72b0c1438adac512feaa91d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330454607986609861, guid: ea2d7ce6e72b0c1438adac512feaa91d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8550521452298863034, guid: ea2d7ce6e72b0c1438adac512feaa91d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.94
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8550521452298863034, guid: ea2d7ce6e72b0c1438adac512feaa91d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -528,8 +536,8 @@ MonoBehaviour:
   trapPrefab: {fileID: 2988550591973322403, guid: ea8326dc3597b7345907f71b6cf74ce1, type: 3}
   timeInterval: 2.5
   trapLifetime: 10
-  minY: -2
-  maxY: 2
+  minY: -3
+  maxY: 3
   spawnX: 35
 --- !u!4 &559874870
 Transform:
@@ -1253,7 +1261,7 @@ Transform:
   m_GameObject: {fileID: 1309329351}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.17943, y: 2.6591146, z: 0.84475213}
+  m_LocalPosition: {x: 20, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2326,7 +2334,7 @@ Transform:
   m_GameObject: {fileID: 2109995326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.347324, y: 2.6251698, z: 0.8072804}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2340,9 +2348,9 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 299033698}
   - {fileID: 1892467731}
   - {fileID: 2109995327}
-  - {fileID: 299033698}
   - {fileID: 1264996043}
   - {fileID: 1050393834}
   - {fileID: 1309329352}
